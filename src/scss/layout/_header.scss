@@ -1,0 +1,84 @@
+.no-webp .inicio{
+    background-image: url('../img/fondo2.jpg');
+    
+}
+
+.webp .inicio{
+    background-image: url('../img/fondo2.webp');
+}
+
+.header{
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio{
+        
+        background-position: center center;
+        background-size: cover;
+        
+
+        @include tablet{
+            min-height: 70rem;
+        }
+
+        .contenido-header{
+            @include tablet{
+                min-height: 60rem;
+            }
+
+            h1{
+                text-align: left;
+                color: $blanco;
+                font-weight: $bold;
+                margin-top: 10rem;
+                font-size: 6rem;
+            }
+
+            p{
+                color: $blanco;
+            }
+
+        }
+    }
+
+
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+
+    .logo{
+
+        font-size: 3rem;
+        color: $blanco;
+    }
+}
+
+.navegacion{
+    a{
+        color: $blanco;
+        font-weight: $bold;
+        margin-right: 1.5rem;
+        &:last-of-type{
+            margin-right: 0;
+        }
+
+        &:hover{
+            color: $verdeclaro;
+
+        }
+    }
+}
+
+.contenedor-boton{
+
+    width: 60%;
+    p{
+        font-size: 2.2rem;
+        
+    }
+}
+
